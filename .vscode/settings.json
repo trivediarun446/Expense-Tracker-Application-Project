@@ -1,0 +1,20 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 100,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Expensce Tracker Application",
+            "group": "Project ",
+            "database": "expenscetrackerdb",
+            "username": "root",
+            "connectionTimeout": 30,
+            "askForPassword": true
+        }
+    ]
+}
