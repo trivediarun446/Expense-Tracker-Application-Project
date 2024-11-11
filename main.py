@@ -39,7 +39,8 @@ Amount.grid(row=2 , column=0)
 Amount=tk.Entry(Input, font=('times new roman',15,'bold') , bd=5 )
 Amount.grid(row=2 , column=1 , pady=9)
 
-# Mode of transection 
+# Mode of trans1
+# ction 
 Mode_of_tracs=tk.Label(Input , text='Mode' , font=('times new roman',15),fg='white', bg='grey20')
 Mode_of_tracs.grid(row=3,column=0)
 Mode_of_tracs=tk.Entry(Input  , font=('times new roman',15,'bold'), bd=5)
@@ -60,6 +61,7 @@ Search=tk.LabelFrame(Working , text='Search' , font=('times new roman',15) , bg=
 Search.grid(row=0 , column=1 )
 
 Table_Name = tk.Label(Search , text='Month_Year' , font=('times new roman',15 ) , bg='grey20' , fg='white')
+
 Table_Name.grid(row=0 , column=0)
 # This part is the entry part of month year 
 Table_Name_entry= tk.Entry(Search ,font=('times new roman',15),bd=5)
@@ -78,4 +80,12 @@ Amount.grid(row=2,column=1 , pady=9)
 
 button2=tk.Button(Search , text='Search' , font=('times new roman ', 15) , fg='black' ,bg='light blue' , bd=5)
 button2.grid(row=3 , column=2, pady=9 , padx=9)
+
+delete= tk.LabelFrame(Working , text="Delete" , font=('times new roman' , 15 ) , bg='grey20',fg='gold' ,bd=5)
+delete.grid(row=0 , column=3 , pady=9)
+
+Table_Name=tk.Label(delete , text='Table Name' , font=('times new roman',15 , ) , fg='white',bg='grey20')
+Table_Name.grid(row=0 , column=1)
+Table_Name=tk.Entry(delete,font=('times new roman',15 , 'bold') , bd=5)
+Table_Name.grid(row=0 , column=1 , pady=9)
 window.mainloop()
